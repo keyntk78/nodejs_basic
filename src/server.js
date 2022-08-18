@@ -1,6 +1,7 @@
 import express from 'express';
 import configViewengine from './configs/viewEngine';
 import initWebRoute from './route/web';
+// import connection from './configs/connectDB';
 require('dotenv').config();
 
 const app = express()
