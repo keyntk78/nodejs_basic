@@ -23,7 +23,6 @@ let createNewUser = async (req, res) => {
 
 let deleteUser = async (req, res) => {
     let userId = req.body.userId;
-    console.log(userId);
     await pool.execute('delete from users where id = ?', [userId])
     return res.redirect('/');
 }
