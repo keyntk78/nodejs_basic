@@ -21,7 +21,6 @@
     <div>
         <div class="w3-container">
             <h2>List Users</h2>
-        
             <table class="w3-table-all w3-hoverable">
                 <thead>
                     <tr class="w3-light-grey">
@@ -51,8 +50,31 @@
                         </tr>
                     <% } %>
                 </tbody>
-
             </table>
+        </div>
+        <div class="create-user-container">
+            <form action="/create-new-user" method="POST">
+                <h3><b>Create a new user</b></h3>
+                <div>
+                    <label for="">FirstName</label>
+                    <input type="text" name="firstName">
+                </div>
+                <div>
+                    <label for="">LastName</label>
+                    <input type="text" name="lastName">
+                </div>  
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="">Address</label>
+                    <input type="text" name="address">
+                </div>
+                <div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
