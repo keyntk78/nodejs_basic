@@ -1,0 +1,11 @@
+.upload-file-container {
+    padding: 20px;
+}
+
+.upload-file-container label {
+    display: block;
+}
+
+.btn-save {
+    margin-top: 15px;
+}
